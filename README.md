@@ -10,11 +10,18 @@ instruções:
 
 
 ARQUIVOS A SEREM INSERIDOS NO BANCO:
+
+
 CRIAR BANCO.SQL;
+
 INSERIR INSERTALTERNATIVA.BANCO.SQL
+
 INSERIR INSERTENUNCIADOERESP.BANCO.SQL
 
 
 
+
+
 Possíveis bugs: 
+
 Sistema de recompensas - mostrar todos os prêmios mesmo que o usuário não tenha cumprido algumas metas
