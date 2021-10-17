@@ -1,0 +1,93 @@
+
+*  INICIO - 10/10/2021 - 23H23 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 11/10/2021 04:01 - PAUSA
+
+ Fiz o pergunta_enunciado_banco.php resgatar do banco, os dados que o fluxo_de_perguntas.php 
+solicitava para envia2e4r o enunciado, as alternativas e a resposta correta para o perguntas.php.
+ Fiz o gravar_resposta_usuario.php receber do fluxo_de_resposta.php, que por sua vez
+recebeu do perguntas.php, finalmente consegui criar um objeto para conexão ao banco de dados em POO.
+
+
+
+---
+
+
+*  INICIO - 11/12/2021 - 20H44 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::  12/10/2021 02:41 - PAUSA
+
+Consegui inserir os dados do Excel no banco, através da modelagem da planilha, inserindo as querys entre as células
+e separando das alternativas, conectando_as às alternativas através de um ID ordenado decrescente.
+
+
+*  INICIO - 12/12/2021 - 18h42 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::  13/10/2021 01:29 - PAUSA
+
+
+-------------------------------------------- RESET DE CÓDIGO 1 --------------------------------------------------------------------
+
+
+-------------------------------------------- RESET DE CÓDIGO 2--------------------------------------------------------------------
+
+-------------------------------------------- RESET DE BANCO --------------------------------------------------------------------
+
+
+Remodelei por completo o banco de dados, reprogramei e refiz todos os códigos: Objetos, métodos e etc. Coloquei as QUERY
+diretamente nas classes criadas na pasta conexao.php 
+Vinculei as alternativas às questões através de um novo ''id'', que criei e eu ja havia modelado no excel com os valores 
+já determinados.
+
+já tentei fazer um while na pasta perguntas.php para incluir as alternativas, mas não deu certo. Tentei já deixar o número de
+questões e só printar as alternativas através de uma array, não deu certo. Como já informado, refiz o banco de dados e as
+querys para ter permissão para puxar nas arrays, não deu certo. Todos apresentam o mesmo problema: Só aparece a primeira alterna-
+tiva.
+
+
+--
+*  INICIO - 13/10/2021 - 20h13 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::  14/10/2021 15:51 - PAUSA
+
+
+-------------------------------------------- RESET DE BANCO 2--------------------------------------------------------------------
+
+
+Resetei o banco de dados e refiz, remodelando o modelo de BD das alternativas. 
+Eu estava com um problema gigante de não conseguir juntar CADA alternativa relacionada com a pergunta pelo idPerg, separada 
+na tabela. Todas as alternativas só retornavam a primeira alternativa em todas as 5 opções. Após remodelar e inserir no banco,
+tudo deu certo. Por fim, após uma pesquisa rápida no google, fiz o alinhamento das questões e o Radio no input para ficar elegante.
+
+Lá pelas 13h, assim que terminei todo procedimento do banco, alinhamento, testes e etc, comecei a fazer a parte de 
+verificação de perguntas e comparação entre a resposta do usuário e a resposta correta contida no banco.
+
+18h20 - Vou dar uma pausa para descansar. estou com problemas para fazer a comparação da resposa do usuário com a resposta correta.
+através de um if, tentei comparar as variaveis com os valores, mas sempre apresenta erro, como se as respostas estivessem
+diferentes, mesmo quando colocoa resposta correta. Entretanto, funciona quando utilizo o var_dump.
+---
+*  INICIO - 14/10/2021 - 23h03 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::  15/10/2021 05:54 - PAUSA
+
+
+-------------------------------------------- RESET DE BANCO 3--------------------------------------------------------------------
+
+
+
+Remodelei o banco de dados devido a um erro que estava sendo apresentado na hora da comparação das respostas.
+O arquivo de EXCEL estava inserindo espaço automaticamente aos números que representam as respostas certas.
+Remodelei novamente o EXCEL, utilizando a ferramente ''texto para colunas'', retirei os espaços e reinseri no banco.
+
+
+
+Criei uma tabela para armazenar os dados do usuário, como por exemplo o login, senha e sistema de pontuação.
+
+Para estilizar e deixar com uma aparência um pouco mais agradavel, utilizei o framework Materialize.
+
+
+*  INICIO - 15/10/2021 - 19h34 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::  16/10/2021 23:03- PAUSA
+
+Criação e conclusão do sistema de login, com sistema de soma de pontos incluso.
+
+bug encontrado: o type="radio" das alternativas não seleciona a resposta escolhida; Correção:
+
+*  INICIO - 16/10/2021 - 18h13 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::  17/10/2021 08h11- PAUSA
+
+sistema de login: ok;
+sistema de upload de avatar: ok;
+sistema de cadastro de questionario: ok;
+sistema de calculo de quantidade de perguntas vistas: ok;
+sistema de calculo de porcentagem de acerto: ok;
+sistema de cadastro de novo usuário: ok;
+sistema de recompensas: ok;
