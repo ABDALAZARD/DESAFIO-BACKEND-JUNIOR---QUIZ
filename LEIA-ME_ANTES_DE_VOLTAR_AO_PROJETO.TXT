@@ -91,3 +91,5 @@ sistema de calculo de quantidade de perguntas vistas: ok;
 sistema de calculo de porcentagem de acerto: ok;
 sistema de cadastro de novo usuário: ok;
 sistema de recompensas: ok;
+
+CONCLUSÃO DO PROJETO: 20h03
